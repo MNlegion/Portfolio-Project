@@ -1,6 +1,9 @@
+body {
+    font-family: monospace;
+}
+
 header {
-        padding: 10px 10px;
-        font-family: monospace;
+        padding: 30px 30px;
         background-color: #3D5A8C;
         display: flex;
         justify-content: space-between;
@@ -55,6 +58,7 @@ header nav ul li a:hover {
     text-decoration: none;
     border-radius: 15px;
     text-shadow: none;
+    border: 2px solid aliceblue;
 }
 
 /* Hero Style Start */
@@ -65,14 +69,62 @@ header nav ul li a:hover {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
 }
 
 .hero-text h2 {
     color: aliceblue;
-    font-size: 40px;
-    display: inline;
+    font-size: 90px;
+    display: inline-flex;
+    justify-content: space-around;
+    padding: 20px 30px;
+    margin-left: 50px;
+}
+/* Hero Style End */
+
+/* About Me */
+.primary-section h2 {
+    padding: 5px;
+    display: flex;
+    justify-content: left;
+    border-right: 4px solid #3D5A8C;
+    color: #3D5A8C;
+    font-size: 65px;
+    position: relative;
+    left: 200px;
+    width: 250px;
 }
 
-.border-title h2 {
-    border-right: 7px solid rgb(24, 34, 48);
+.secondary-section p {
+    color: #3D5A8C;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.about-info {
+    padding: 5px;
+    display: flex;
+    color: #3D5A8C;
+    font-size: 30px;
+    position: relative;
+}
+
+/* Contact Style Start */
+.contact-me p {
+    padding: 0%;
+    margin: 0%;
+    color: #3D5A8C;
+}
+.contact-me ul {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    padding: 25px 20px;
+    font-size: 1.55vw;
+    align-items: center;
+    text-decoration: underline;
+    color: #3D5A8C;
 }
