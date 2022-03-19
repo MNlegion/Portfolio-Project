@@ -82,6 +82,9 @@ header nav ul li a:hover {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+    align-items: stretch;
+    margin: 25px;
+    padding: 25px;
 }
 
 .about h2, .work h2, .contact h2 {
@@ -100,22 +103,6 @@ header nav ul li a:hover {
 .about span {
     font-size: 20px;
     color: var(--tertiary-color);
-}
-
-
-/* Utility Style */
-.section-border {
-    border-right: 6px solid var(--tertiary-color);
-    display: inline;
-    flex-wrap: wrap;
-    text-align: right;
-    padding-right: 20px;
-    margin-left: 70px;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
 }
 
 .about-flex {
@@ -144,6 +131,7 @@ main {
     border: 8px solid var(--primary-color);
     max-width: 70%;
     height: auto;
+    opacity: 0.5;
 }
 
 .text-container {
@@ -161,10 +149,9 @@ main {
     /* border: 5px solid var(--secondary-color); */
 }
 
-/* .gallery:hover {
-    filter: none;
-    transform: scale(1.5);
-} */
+.gallery img:hover {
+    opacity: 1.0;
+}
 
 /* View My Work Style End */
 
@@ -172,11 +159,10 @@ main {
 .test-div {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 address {
-    display: flex;
-    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     font-size: 35px;
@@ -190,6 +176,7 @@ address a {
     color: var(--tertiary-color);
     border-bottom: 4px solid var(--primary-color);
     padding: 15px;
+    margin: 20px;
 }
 /* Contact Me Style End */
 
@@ -205,6 +192,12 @@ address a {
 main {
     display: flex;
     flex-direction: column;
+}
+
+.about-flex {
+    padding: 75px 75px 75px 15px;
+    display: flex;
+    align-items: center;
 }
 
 /* Utility Style End */
