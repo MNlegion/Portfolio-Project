@@ -1,130 +1,210 @@
+:root {
+    --primary-color: #2fe72f;
+    --secondary-color: rgb(219, 231, 236);
+    --tertiary-color: #ca37be;
+}
+
 body {
     font-family: monospace;
 }
 
+/* Header and Navigation Style Start */
 header {
-        padding: 30px 30px;
-        background-color: #3D5A8C;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        position: -webkit-sticky;
-        position: sticky;
-        background-size: cover;
-        z-index: 9999;
+    padding: 20px 20px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 header h1 {
-    font-weight: bold;
-    font-size: 36px;
-    color: whitesmoke;
-    margin: 10px;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    align-self: center;
-    background-color: rgba(24, 34, 48, 0.8);
-    /* How do I extend this border further out from my name? */
-    border-radius: 15px;
-    border: 3px solid aliceblue;
+    font-size: 50px;
+    margin: 55px 45px 20px 20px;
+    padding: 20px;
+    background-color: var(--tertiary-color);
+    border-radius: 25px;
+    border: 6px solid var(--secondary-color);
 }
 
 header a {
     text-decoration: none;
-    color: whitesmoke;
-}
-
-header nav {
-    margin: 10px 0;
+    color: var(--secondary-color);
 }
 
 header nav ul {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
     list-style: none;
 }
 
 header nav ul li a {
-    padding: 25px 20px;
-    font-weight: lighter;
-    font-size: 1.55vw;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    align-items: center;
-    text-decoration: underline;
+    padding: 20px 20px;
+    font-weight: bold;
+    font-size: 2vw;
 }
 
 header nav ul li a:hover {
-    background-color: rgba(24, 34, 48, 0.8);
-    text-decoration: none;
+    background: var(--tertiary-color);
+    color: var(--secondary-color);
     border-radius: 15px;
-    text-shadow: none;
-    border: 2px solid aliceblue;
+    border: 3px solid var(--secondary-color);
 }
+/* Header and Navigation Style End */
 
 /* Hero Style Start */
-
-.hero {
+.hero-background {
     background-image: url(../images/carbonfiber.jpg);
-    height: 300px;
-    background-position: center;
-    background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    width: auto;
 }
 
-.hero-text h2 {
-    color: aliceblue;
-    font-size: 90px;
-    display: inline-flex;
-    justify-content: space-around;
-    padding: 20px 30px;
-    margin-left: 50px;
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    /* How can I get the items to shift towards the bottom of the background image? */
+}
+
+.hero p {
+    color: var(--secondary-color);
+    font-size: 45px;
+    margin: 60px 15px 10px 0;
+    padding: 30px 80px 10px 0;
 }
 /* Hero Style End */
 
-/* About Me */
-.primary-section h2 {
-    padding: 5px;
+/* Section Title Style Start */
+.about, .work, .contact {
     display: flex;
-    justify-content: left;
-    border-right: 4px solid #3D5A8C;
-    color: #3D5A8C;
-    font-size: 65px;
-    position: relative;
-    left: 200px;
-    width: 250px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
-.secondary-section p {
-    color: #3D5A8C;
-    font-size: 25px;
+.about h2, .work h2, .contact h2 {
+    font-size: 50px;
+    color: var(--tertiary-color);
+}
+
+/* About Me Style Start */
+.about img {
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.about span {
+    font-size: 20px;
+    color: var(--tertiary-color);
+}
+
+
+/* Utility Style */
+.section-border {
+    border-right: 6px solid var(--tertiary-color);
+    display: inline;
+    flex-wrap: wrap;
+    text-align: right;
+    padding-right: 20px;
+    margin-left: 70px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-flex {
+    padding: 75px 75px 75px 15px;
+    display: flex;
+    align-items: center;
+}
+
+
+/* View My Work Style Start */
+.thumbnail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery {
+    /* flex: 33.33%; */
+    padding: 5px;
+    filter: blur(25%);
+    display: flex;
+    justify-content: center;
+}
+
+.gallery img {
+    border: 8px solid var(--primary-color);
+    max-width: 70%;
+    height: auto;
+}
+
+.text-container {
+    position: relative;
+}
+
+.img-style {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    background-color: var(--tertiary-color);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* border: 5px solid var(--secondary-color); */
+}
+
+/* .gallery:hover {
+    filter: none;
+    transform: scale(1.5);
+} */
+
+/* View My Work Style End */
+
+/* Contact Me Style Start */
+.test-div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+address {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.about-info {
-    padding: 5px;
-    display: flex;
-    color: #3D5A8C;
-    font-size: 30px;
-    position: relative;
-}
-
-/* Contact Style Start */
-.contact-me p {
-    padding: 0%;
-    margin: 0%;
-    color: #3D5A8C;
-}
-.contact-me ul {
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    list-style: none;
-    padding: 25px 20px;
-    font-size: 1.55vw;
+    justify-content: space-around;
     align-items: center;
-    text-decoration: underline;
-    color: #3D5A8C;
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--tertiary-color);
+    font-style: normal;
 }
+
+address a {
+    text-decoration: none;
+    color: var(--tertiary-color);
+    border-bottom: 4px solid var(--primary-color);
+    padding: 15px;
+}
+/* Contact Me Style End */
+
+/* Utility Style */
+.section-border {
+    border-right: 6px solid var(--tertiary-color);
+    display: flex;
+    flex-wrap: wrap;
+    text-align: right;
+    padding-right: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Utility Style End */

@@ -4,22 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Robert Kreuser's Portfolio</title>
+    <title>Rob Kreuser's Portfolio</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
     <header>
         <h1>
-            <a href="/">Robert Kreuser's Portfolio</a>
+            <a href="/">Rob Kreuser's Portfolio</a> 
         </h1>
         <nav>
-            <!-- Unordered List Items of Various Projects -->
             <ul>
-                <!-- List Items Elements -->
                 <li>
-                    <!-- Anchor Elements -->
-                    <a href="#about-me">About Me</a>
+                    <a href="#about-me">About Me</a> 
                 </li>
                 <li>
                     <a href="#view-my-work">View My Work</a>
@@ -27,77 +24,72 @@
                 <li>
                     <a href="#contact-me">Contact Me</a>
                 </li>
-                <li>
-                    <a href="#resume">Resume</a>
-                </li>
             </ul>
         </nav>
     </header>
 
-    <!-- Hero/Jumbotron -->
-    <section class="hero">
-        <div class="hero-text">
-            <h2>Think.</h2>
-            <h2>Create.</h2>
-            <h2>Enjoy.</h2>
-        </div>
+    <!-- Hero Banner -->
+    <section class="hero-background">
+      <div class="hero">
+          <p>Think.</b>Create.</b>Enjoy.</p>
+      </div>  
     </section>
-    <!-- End Hero/Jumbotron -->
 
-    <!-- About Me Section -->
-    <section id="about-me" class="primary-section">
-        <div>
-            <h2>About Me</h2>
-        </div>
-        <div class="secondary-section">
-            <p>This section is the about me section. Fill this in with various information like where I'm from, happily married, my hobbies, and my journey/goals into coding.I am continuing on with this text to check and see if my wrap is in place.</p>
-        </div>
-    </section>
-    <!-- End About Me Section -->
+    <!-- Content of Site -->
+    <main>
+        <section id="about-me" class="about">
+            <h2 class="section-border">About<br>Me</h2>
+            <div class="about-flex">
+                <img src="./assets/images/Profile Picture.jpg" alt="Profile picture of Robert Kreuser">
+                <span>Welcome to my profile! My name is Rob Kreuser and I'm currently undertaking a journey to learn to code. I had spent many years pondering this decision and told myself that during the pandemic was the perfect time to finally commit to my desires.<br><br>I currently reside in Minnesota with my best friend and beautiful wife, Larissa. While I am on the coding adventure by myself, we are both actively preparing for a new chapter together down in sunny and warm Tampa, Florida. Welcome to my profile! My name is Rob Kreuser and I'm currently undertaking a journey to learn to code. I had spent many years pondering this decision and told myself that during the pandemic was the perfect time to finally commit to my desires.<br><br>I currently reside in Minnesota with my best friend and beautiful wife, Larissa. While I am on the coding adventure by myself, we are both actively preparing for a new chapter together down in sunny and warm Tampa, Florida.</span>
+            </div>
+        </section>
 
-    <!-- View My Work Section -->
-    <section id="view-my-work" class="primary-section">
-        <div>
-            <h2>Work</h2>
-        </div>
-        <!-- This is where I want to list out my various works in an image form. When hovered over the image should enlarge to show the thumbnail picture clearer. When clicked, the image should bring the user to the site of the work. -->
-        <div class="work-img">
-            <img src="" alt="Run Buddy Thumbnail Site View" />
-            <!-- Placeholder image using Run Buddy until I get thumbnails -->
-            <img src="" alt="" />
-            <!-- Placeholder image using Run Buddy until I get thumbnails -->
-            <img src="" alt="" />
-        </div>
-    <!-- End View My Work Section -->
-
-    <!-- Contact Section -->
-    <section id="contact-me" class="primary-section">
-        <div>
-            <h2>Contact Me</h2>
-        </div>
-        <div class="contact-me">
-            <ul>
-                <div>
-                    <li>
-                        <p>612.240.0784</p>
-                    </li>
-                    <li>
-                        <a href="mailto:rkreuser30@gmail.com">rkreuser30@gmail.com</a> 
-                    </li>
-                    <li>
-                        <a href="https://github.com/MNlegion/">GitHub</a>
-                    </li>
-                    <li>
-                        <a href="">Twitter Link Here</a>
-                    </li>
-                    <li>
-                        <a href="https://open.spotify.com/playlist/3LFIBdP7eZXJKqf3guepZ1?si=13a1b75a48f0463f">Spotify</a>
-                    </li>
+        <section id="view-my-work" class="work">
+            <div>
+                <h2 class="section-border">Work</h2>
+            </div>
+            <div class="thumbnail">
+                <div class="gallery text-container">
+                    <a href="https://mnlegion.github.io/run-buddy/">
+                        <img alt="Run Buddy" src="assets/images/BinaryBackground.jpg" style="width:100%">
+                    </a>
+                    <div class="img-style">
+                        <h3>Run Buddy</h3>
+                    </div>
                 </div>
-            </ul>
-        </div>
+                <div class="gallery text-container">
+                    <a href="https://mnlegion.github.io/Octopus-Homework/">
+                        <img alt="Octo-Homework" src="./assets/images/carbonfiber.jpg" style="width:100%">
+                    </a>
+                    <div class="img-style">
+                        <h3>Octo-Homework</h3>
+                    </div>
+                </div>
+                <div class="gallery text-container">
+                    <a href="https://mnlegion.github.io/robot-gladiators/">
+                        <img alt="Robot Gladiators" src="assets/images/BinaryBackground.jpg" style="width:100%">
+                    </a>
+                    <div class="img-style">
+                        <h3>Robot Gladiators</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    </section>
-    
+        <section id="contact-me" class="contact">
+            <div class="test-div">
+                <h2 class="section-border">Contact<br>Me</h2>
+                <address>
+                    <!-- How do I under just the text individually and space it? -->
+                    <a href="tel:612.240.0784">612.240.0784</a>
+                    <a href="mailto:rkreuser30@gmail.com">rkreuser30@gmail.com</a>
+                    <a href="https://github.com/MNlegion/">GitHub</a>
+                    <a href="https://open.spotify.com/playlist/3LFIBdP7eZXJKqf3guepZ1?si=13a1b75a48f0463f">Spotify</a>
+                </address>
+            </div>
+        </section>
+    </main>
+
 </body>
 </html>
