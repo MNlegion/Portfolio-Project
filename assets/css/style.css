@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #2fe72f;
-    --secondary-color: rgb(219, 231, 236);
-    --tertiary-color: #ca37be;
+    --primary-color: #555f88;
+    --secondary-color: rgb(215, 235, 245);
+    --tertiary-color: #000157;
 }
 
 body {
@@ -19,11 +19,11 @@ header {
 
 header h1 {
     font-size: 50px;
-    margin: 55px 45px 20px 20px;
+    margin: 55px 30px 10px 25px;
     padding: 20px;
     background-color: var(--tertiary-color);
     border-radius: 25px;
-    border: 6px solid var(--secondary-color);
+    border: 3px solid var(--secondary-color);
 }
 
 header a {
@@ -37,6 +37,7 @@ header nav ul {
     flex-wrap: wrap;
     justify-content: space-between;
     list-style: none;
+    margin-right: 30px;
 }
 
 header nav ul li a {
@@ -66,138 +67,138 @@ header nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    /* How can I get the items to shift towards the bottom of the background image? */
 }
 
 .hero p {
     color: var(--secondary-color);
     font-size: 45px;
-    margin: 60px 15px 10px 0;
-    padding: 30px 80px 10px 0;
+    margin: 60px 60px 10px;
+    padding: 45px 10px 10px 10px
 }
 /* Hero Style End */
-
-/* Section Title Style Start */
-.about, .work, .contact {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: stretch;
-    margin: 25px;
-    padding: 25px;
-}
-
-.about h2, .work h2, .contact h2 {
-    font-size: 50px;
-    color: var(--tertiary-color);
-}
-
-/* About Me Style Start */
-.about img {
-    height: 240px;
-    width: 240px;
-    border-radius: 50%;
-    padding: 15px;
-}
-
-.about span {
-    font-size: 20px;
-    color: var(--tertiary-color);
-}
-
-.about-flex {
-    padding: 75px 75px 75px 15px;
-    display: flex;
-    align-items: center;
-}
-
-
-/* View My Work Style Start */
-.thumbnail {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.gallery {
-    /* flex: 33.33%; */
-    padding: 5px;
-    filter: blur(25%);
-    display: flex;
-    justify-content: center;
-}
-
-.gallery img {
-    border: 8px solid var(--primary-color);
-    max-width: 70%;
-    height: auto;
-    opacity: 0.5;
-}
-
-.text-container {
-    position: relative;
-}
-
-.img-style {
-    position: absolute;
-    left: 10px;
-    bottom: 10px;
-    background-color: var(--tertiary-color);
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-    /* border: 5px solid var(--secondary-color); */
-}
-
-.gallery img:hover {
-    opacity: 1.0;
-}
-
-/* View My Work Style End */
-
-/* Contact Me Style Start */
-.test-div {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-address {
-    justify-content: space-around;
-    align-items: center;
-    font-size: 35px;
-    font-weight: bold;
-    color: var(--tertiary-color);
-    font-style: normal;
-}
-
-address a {
-    text-decoration: none;
-    color: var(--tertiary-color);
-    border-bottom: 4px solid var(--primary-color);
-    padding: 15px;
-    margin: 20px;
-}
-/* Contact Me Style End */
-
-/* Utility Style */
-.section-border {
-    border-right: 6px solid var(--tertiary-color);
-    display: flex;
-    flex-wrap: wrap;
-    text-align: right;
-    padding-right: 20px;
-}
 
 main {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
-.about-flex {
-    padding: 75px 75px 75px 15px;
+/* About Style Start */
+/* .about {
+    background: var(--primary-color);
+} */
+
+.section-title h2 {
+    color: var(--tertiary-color);
+    font-size: 45px;
     display: flex;
+    text-align: right;
+    border-right: 5px solid var(--tertiary-color);
+    padding-right: 2%;
+}
+
+.section-title {
+    margin: 50px auto;
+    padding: 20px;
+    width: 88%;
+    display: flex;
+    flex-direction: row;
+}
+
+.about-info {
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
-/* Utility Style End */
+.about-text p {
+    color: var(--tertiary-color);
+    font-size: 25px;
+    line-height: 1.3;
+}
+
+.about-img {
+    flex: 1 12%;
+    margin: 20px;
+    padding-left: 5%;
+}
+
+.about-text {
+    flex: 12;
+}
+
+.about-img img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+/* About Style End */
+
+/* Work Style Start */
+
+.thumbnail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.gallery {
+    padding: 5px;
+    display: flex;
+    position: sticky;
+}
+
+.gallery a img {
+    border: 7px solid var(--tertiary-color);
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+}
+
+.gallery h3 {
+    color: var(--tertiary-color);
+    position: absolute;
+    font-size: 2.8em;
+    left: 20px;
+    bottom: 10px;
+    background-color: var(--primary-color);
+    border: 3px solid var(--secondary-color);
+}
+
+/* Contact Me Style Start */
+
+address {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+address a {
+    text-decoration: underline;
+    color: var(--tertiary-color);
+    padding: 15px;
+}
+
+address a:hover {
+    border: 10px solid greenyellow;
+}
+/* Contact Me Style End */
+
+
+/* MEDIA QUERY FOR DESKTOP AND SMALLER */
+@media screen and (max-width: 980px) {
+    
+}
+
+/* MEDIA QUERY TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    
+}
+
+/* MEDIA QUERY FOR MOBILE AND SMALLER */
+@media screen and (max-width: 575px) {
+    
+}
