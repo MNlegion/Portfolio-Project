@@ -190,15 +190,102 @@ address a:hover {
 
 /* MEDIA QUERY FOR DESKTOP AND SMALLER */
 @media screen and (max-width: 980px) {
-    
+    header {
+        position: relative;
+        justify-content: center;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    .hero {
+        width: 100%;
+    }
+
+    .section-title {
+        width: 80%;
+    }
 }
 
 /* MEDIA QUERY TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
-    
+    section {
+        padding: 30px 15px;
+    }
+
+    .section-title h2 {
+        flex: 1 100%;
+        text-align: right;
+    }
+
+    .thumbnail {
+        flex: 2 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .gallery {
+        flex: 100%;
+    }
+
+    .img-style {
+        flex: 0 30%;
+        margin: 15px;
+    }
+
+    .about {
+        flex: 1 100%;
+    }
 }
 
 /* MEDIA QUERY FOR MOBILE AND SMALLER */
 @media screen and (max-width: 575px) {
-    
+    section {
+        padding: 30px 15px;
+    }
+
+    .section-title h2 {
+        flex: 1 100%;
+        text-align: right;
+    }
+
+    .thumbnail {
+        flex: 2 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .gallery {
+        flex: 100%;
+    }
+
+    .img-style {
+        flex: 0 30%;
+        margin: 15px;
+    }
+
+    .about {
+        flex: 1 100%;
+    }
+
+    address {
+        flex: 1 100%;
+        justify-content: center;
+    }
+
+    address a {
+        flex: 100%;
+        justify-content: center;
+    }
 }
