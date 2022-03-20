@@ -165,6 +165,10 @@ main {
     border: 3px solid var(--secondary-color);
 }
 
+.gallery a img:hover {
+    filter: none;
+}
+
 /* Contact Me Style Start */
 
 address {
